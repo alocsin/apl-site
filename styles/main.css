@@ -109,7 +109,8 @@ h2 {
   font-size: 36px;
   font-weight: 100;
   line-height: 1;
-  padding: 0;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 /* h3 is for the project titles */
@@ -308,4 +309,12 @@ section.projects {
   padding: 0px 5px 0px 5px;
   display: flex;
   flex-direction: column;
+}
+
+.hidden {
+  opacity: 0.5;
+}
+
+.all-projects {
+  opacity: 1;
 }

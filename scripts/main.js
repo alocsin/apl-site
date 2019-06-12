@@ -8,7 +8,7 @@ $(".filters-list a").on("click", function() {
 
   $(".all-projects").fadeOut(800);
   $(filter)
-    .delay(800)
+    .delay(200)
     .fadeIn(800);
 
   // this will add a class name of selected to the current filter link that we clicked on
