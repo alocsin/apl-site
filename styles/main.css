@@ -191,6 +191,7 @@ header nav a.selected {
 
 section.projects {
   display: flex;
+  min-height: 1000px;
 }
 
 .project-filters a {
@@ -255,6 +256,15 @@ section.projects {
   margin-left: 5px;
   line-height: 1;
   padding-bottom: 0px;
+  opacity: 1;
+}
+
+h2 .hidden {
+  opacity: 0.5;
+}
+
+h2 .selected {
+  opacity: 1;
 }
 
 .about-container {
