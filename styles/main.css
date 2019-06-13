@@ -214,7 +214,7 @@ section.projects {
 }
 
 .project-filters a.selected {
-  border-bottom: solid 1px #f2c113;
+  border-bottom: solid 2px #f2c113;
   padding-bottom: 3px;
 }
 
@@ -321,10 +321,12 @@ h2 .selected {
   flex-direction: column;
 }
 
-.hidden {
-  opacity: 0.5;
-}
-
 .all-projects {
   opacity: 1;
+  transition: visibility 0s linear 600ms, opacity 600ms;
+}
+
+.hidden {
+  opacity: 0.3;
+  transition: visibility 0s linear 600ms, opacity 600ms;
 }
