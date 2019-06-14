@@ -62,8 +62,7 @@ body {
   padding-top: 110px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 815px;
-  padding-bottom: 200px;
+  padding-bottom: 20px;
 
   opacity: 100;
 }
@@ -129,6 +128,18 @@ h4 {
   color: #707070;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+}
+
+h5 {
+  font-size: 14px;
+  font-family: "Apercu Mono";
+  font-weight: 100;
+  line-height: 1.2;
+  color: #707070;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0;
+  padding-bottom: 5px;
 }
 
 li {
@@ -280,6 +291,8 @@ h2 .selected {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about-top-section {
@@ -323,10 +336,36 @@ h2 .selected {
 
 .all-projects {
   opacity: 1;
-  transition: visibility 0s linear 600ms, opacity 600ms;
+  transition: visibility 0s linear 1200ms, opacity 600ms;
 }
 
 .hidden {
   opacity: 0.3;
-  transition: visibility 0s linear 600ms, opacity 600ms;
+  transition: visibility 0s linear 1200ms, opacity 600ms;
+}
+
+.footer-container {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row-row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-footer {
+  position: relative;
+  padding: 4rem 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.footer-right {
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+.adela-logo {
+  max-width: 75px;
 }
