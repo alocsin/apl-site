@@ -47,14 +47,13 @@ html {
   font-stretch: normal;
 }
 
-/**** ACROSS ALL PAGES ****/
+/**** ACROSS ALL PAGES: STYLES ****/
 
 body {
   font-family: "Dia Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 100;
   font-style: normal;
   font-stretch: normal;
-
   font-size: 16px;
   line-height: 1.2;
   color: #707070;
@@ -63,60 +62,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 20px;
-
   opacity: 100;
-}
-
-.container {
-  height: 100%;
-  min-height: 100%;
-  max-width: 1400px;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-div.project--twoimg {
-  max-width: 900px;
-  display: flex;
-  flex-direction: row;
-  margin: 10px auto 10px auto;
-}
-
-img.project--twoimg {
-  max-width: 450px;
-  padding: 5px;
-}
-
-.project-container {
-  max-width: 900px;
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.project-img {
-  max-width: 900px;
-  height: 100%;
-  margin: 10px 0px 10px 0px;
-}
-
-.project-description {
-  max-width: 450px;
-  margin: 20px auto 20px auto;
-}
-
-sup {
-  display: inline-block;
-  font-size: 12px;
-  font-family: Dia Bold;
-  color: inherit;
-  margin-left: 5px;
-}
-
-h2.coming-soon {
-  color: #969696;
 }
 
 a {
@@ -125,41 +71,9 @@ a {
   transition: all 0.5s ease;
 }
 
-/* Rotate */
-.hvr-rotate {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(01px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-}
-.hvr-rotate:hover,
-.hvr-rotate:focus,
-.hvr-rotate:active {
-  -webkit-transform: rotate(-2deg);
-  transform: rotate(-2deg);
-}
-
-.projects-container a.proj-title:hover {
-  color: #f2c113;
-  transition: all 0.5s ease;
-  border-bottom: none;
-}
-
 a:hover {
   color: #707070;
   transition: all 0.5s ease;
-}
-
-section.project-info {
-  max-width: 400px;
-  display: block;
-  margin-left: 200px;
-  margin-right: auto;
 }
 
 section {
@@ -175,7 +89,7 @@ h1 {
   font-size: 36px;
   font-family: "Dia Bold";
   font-weight: 400;
-  line-height: 0;
+  line-height: 1;
   color: #f2c113;
 }
 
@@ -187,6 +101,10 @@ h2 {
   line-height: 1.2;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
+}
+
+h2.coming-soon {
+  color: #969696;
 }
 
 /* h3 is for the project titles */
@@ -230,7 +148,105 @@ li {
   color: #f2c113;
 }
 
-/* HEADER STYLES */
+sup {
+  display: inline-block;
+  font-size: 12px;
+  font-family: Dia Bold;
+  color: inherit;
+  margin-left: 5px;
+}
+
+fade-in {
+  transition: all 500ms;
+}
+
+/* GENERAL CONTAINER / SECTION STYLING */
+
+.container {
+  height: 100%;
+  min-height: 100%;
+  max-width: 1400px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-container {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* PROJECT PAGE-SPECIFIC STYLING */
+
+div.project-text {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-img {
+  max-width: 900px;
+  height: 100%;
+  margin: 10px 0px 10px 0px;
+}
+
+.project-description {
+  max-width: 450px;
+  margin: 20px auto 20px auto;
+}
+
+div.project--twoimg {
+  max-width: 900px;
+  display: flex;
+  flex-direction: row;
+  margin: 10px auto 10px auto;
+}
+
+img.project--twoimg {
+  max-width: 450px;
+  padding: 5px;
+}
+
+section.project-info {
+  max-width: 400px;
+  display: block;
+  margin-left: 200px;
+  margin-right: auto;
+  height: 100%;
+}
+
+/*** INDEX ROTATE STYLE ***/
+
+.hvr-rotate {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(01px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.hvr-rotate:hover,
+.hvr-rotate:focus,
+.hvr-rotate:active {
+  -webkit-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+}
+
+.projects-container a.proj-title:hover {
+  color: #f2c113;
+  transition: all 0.5s ease;
+  border-bottom: none;
+}
+
+/* HEADER-SPECIFIC STYLES */
 
 header {
   overflow: hidden;
@@ -275,30 +291,7 @@ header nav a.selected {
   border-width: 2px;
 }
 
-img.tab-hover {
-  height: auto;
-  max-width: 400px;
-  display: none;
-}
-
-.browser-tab-hover {
-  display: inline-block;
-}
-
-.browser-tab-hover:hover img {
-  position: absolute;
-  top: 20%;
-  left: 70%;
-  z-index: -100;
-  opacity: 1;
-  display: block;
-}
-
-fade-in {
-  transition: all 500ms;
-}
-
-/**** PROJECT INDEX PAGE STYLES ****/
+/**** INDEX PAGE: PROJECT FILTERING STYLES ****/
 
 section.projects {
   display: flex;
@@ -311,10 +304,6 @@ section.home-text {
   max-width: 800px;
 }
 
-div.project-text {
-  display: flex;
-  flex-direction: column;
-}
 .project-filters a {
   font-family: "Dia Bold";
   font-style: normal;
@@ -390,16 +379,20 @@ h2 .selected {
   opacity: 1;
 }
 
-.about-container {
-  max-width: 1400px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.all-projects {
+  opacity: 1;
+  transition: visibility 0s linear 1200ms, opacity 600ms;
+}
+
+.hidden {
+  opacity: 0.3;
+  transition: visibility 0s linear 1200ms, opacity 600ms;
 }
 
 /* ABOUT PAGE TINGS */
 
 .about-container {
+  max-width: 1400px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -412,6 +405,8 @@ h2 .selected {
   flex-direction: row;
   padding-top: 50px;
   padding-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about-img {
@@ -424,7 +419,7 @@ h2 .selected {
   width: 450px;
 }
 
-/* ABOUT LISTS */
+/* ABOUT PAGE LISTS */
 
 .about-list-container {
   display: flex;
@@ -432,6 +427,9 @@ h2 .selected {
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: flex-start;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about-list {
@@ -446,15 +444,7 @@ h2 .selected {
   flex-direction: column;
 }
 
-.all-projects {
-  opacity: 1;
-  transition: visibility 0s linear 1200ms, opacity 600ms;
-}
-
-.hidden {
-  opacity: 0.3;
-  transition: visibility 0s linear 1200ms, opacity 600ms;
-}
+/* FOOTER STYLES */
 
 .footer-container {
   width: 100%;
@@ -482,6 +472,28 @@ h2 .selected {
   flex-direction: column;
   margin: 0;
 }
+
 .adela-logo {
   max-width: 75px;
+}
+
+/* INDEX PAGE FUNNY HOVERS */
+
+img.tab-hover {
+  height: auto;
+  max-width: 400px;
+  display: none;
+}
+
+.browser-tab-hover {
+  display: inline-block;
+}
+
+.browser-tab-hover:hover img {
+  position: absolute;
+  top: 20%;
+  left: 70%;
+  z-index: -100;
+  opacity: 1;
+  display: block;
 }
