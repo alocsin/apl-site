@@ -494,14 +494,7 @@ h2 .selected {
   max-width: 75px;
 }
 
-/* INDEX PAGE FUNNY HOVERS */
-
-img.tab-hover {
-  height: auto;
-  width: 100%;
-  max-width: 400px;
-  display: none;
-}
+/* INDEX PAGE HOVERS */
 
 .hover {
   display: inline-block;
@@ -513,4 +506,6 @@ div.image {
   opacity: 0.3;
 }
 
-/* MEDIA QUERIES */
+div.hover {
+  position: relative;
+}
