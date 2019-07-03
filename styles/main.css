@@ -313,6 +313,7 @@ section.projects {
 section.home-text {
   width: 100%;
   max-width: 800px;
+  padding-bottom: 20px;
 }
 
 .project-filters a {
@@ -502,15 +503,14 @@ img.tab-hover {
   display: none;
 }
 
-.browser-tab-hover {
+.hover {
   display: inline-block;
 }
 
-.browser-tab-hover:hover img {
-  position: absolute;
-  top: 20%;
-  left: 70%;
-  z-index: -100;
-  opacity: 1;
-  display: block;
+div.image {
+  z-index: -999;
+  transition: all 500ms ease;
+  opacity: 0.3;
 }
+
+/* MEDIA QUERIES */
