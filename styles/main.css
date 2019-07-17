@@ -181,6 +181,11 @@ fade-in {
   margin-right: auto;
 }
 
+.filters-container {
+  width: 100%;
+  max-width: 900px;
+}
+
 /* PROJECT PAGE-SPECIFIC STYLING */
 
 div.project-text {
@@ -277,6 +282,11 @@ header h1 {
 header nav {
   text-align: center;
   margin: 40px;
+}
+
+.main-nav {
+  width: 100%;
+  max-width: 200px;
 }
 
 header nav a {
@@ -508,4 +518,116 @@ div.image {
 
 div.hover {
   position: relative;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 770px) and (max-width: 960px) {
+  h1,
+  h2 {
+    font-size: 32px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 700px;
+  }
+
+  .projects-container {
+    width: 100%;
+    max-width: 700px;
+  }
+
+  .projects .container {
+    margin-bottom: 200px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+@media screen and (min-width: 680px) and (max-width: 770px) {
+  h1,
+  h2 {
+    font-size: 30px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .projects .container {
+    margin-bottom: 200px;
+    margin-left: 75px;
+    margin-right: 75px;
+  }
+}
+
+@media screen and (max-width: 755px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  header nav a {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 680px) {
+  h1,
+  h2 {
+    font-size: 26px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 550px;
+  }
+
+  .projects .container {
+    margin-bottom: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .filters-container {
+    max-width: 600px;
+  }
+
+  li {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 520px) and (max-width: 600px) {
+  h1,
+  h2 {
+    font-size: 26px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 480px;
+  }
+
+  .projects .container {
+    margin-bottom: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .filters-container {
+    max-width: 200px;
+  }
+
+  li {
+    font-size: 16px;
+    line-height: 2;
+  }
+
+  header nav a {
+    text-align: right;
+  }
 }
