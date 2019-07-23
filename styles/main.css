@@ -703,7 +703,7 @@ div.hover {
   }
 }
 
-@media screen and (min-width: 300px) and (max-width: 480px) {
+@media screen and (min-width: 300px) and (max-width: 600px) {
   section.home-text {
     margin-left: 20px;
     margin-right: 20px;
