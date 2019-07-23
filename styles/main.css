@@ -447,6 +447,7 @@ h2 .selected {
   padding-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 
 .about-img {
@@ -467,9 +468,9 @@ h2 .selected {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: flex-start;
-  width: 100%;
+  width: 91%;
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
@@ -505,7 +506,7 @@ h2 .selected {
 .main-footer {
   position: relative;
   padding: 4rem 0;
-  margin: 20px;
+  margin: 20px 0px 20px 0px;
   width: 100%;
 }
 
