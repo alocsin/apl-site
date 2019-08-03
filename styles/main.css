@@ -428,7 +428,10 @@ h2 .selected {
   div .about-top-section {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   header nav a {
@@ -443,6 +446,8 @@ h2 .selected {
 .about-top-section {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   padding-top: 50px;
   padding-bottom: 50px;
   margin-left: auto;
@@ -505,7 +510,6 @@ h2 .selected {
 
 .main-footer {
   position: relative;
-  padding: 4rem 0;
   margin: 20px 0px 20px 0px;
   width: 100%;
 }
@@ -526,7 +530,7 @@ h2 .selected {
 /* INDEX PAGE HOVERS */
 
 .hover {
-  display: inline-block;
+  display: inline;
 }
 
 div.image {
@@ -626,7 +630,7 @@ div.hover {
   }
 }
 
-@media screen and (min-width: 300px) and (max-width: 400px) {
+@media screen and (min-width: 300px) and (max-width: 340px) {
   .footer-container {
     max-width: 280px;
   }
@@ -713,5 +717,27 @@ div.hover {
   section .projects {
     margin-left: 20px;
     margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 340px) and (max-width: 414px) {
+  section.home-text {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  section .projects {
+    width: 300px;
+  }
+
+  .footer-container {
+    max-width: 320px;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 340px) {
+  section.home-text {
+    width: 280px;
   }
 }
