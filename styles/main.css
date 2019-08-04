@@ -87,7 +87,7 @@ section {
 /* h1 is used for the site title */
 
 h1 {
-  font-size: calc(18px + (36 - 18) * ((100vw - 300px) / (1400 - 300)));
+  font-size: calc(18px + (32 - 18) * ((100vw - 300px) / (1400 - 300)));
   font-family: "Dia Bold";
   font-weight: 400;
   line-height: 1;
@@ -97,7 +97,7 @@ h1 {
 /* h2 is the largest display size */
 
 h2 {
-  font-size: calc(18px + (36 - 18) * ((100vw - 300px) / (1400 - 300)));
+  font-size: calc(18px + (32 - 18) * ((100vw - 300px) / (1400 - 300)));
   font-weight: 100;
   line-height: 1.2;
   margin-top: 0.5em;
@@ -194,6 +194,9 @@ div.project-text {
   flex-wrap: wrap;
   flex-direction: column;
   height: 100%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project-img {
@@ -223,15 +226,6 @@ img.project--twoimg {
   max-width: 450px;
   height: 100%;
   padding: 5px;
-}
-
-section.project-info {
-  width: 100%;
-  max-width: 400px;
-  display: block;
-  margin-left: 200px;
-  margin-right: auto;
-  height: 100%;
 }
 
 /*** INDEX ROTATE STYLE ***/
@@ -510,7 +504,7 @@ h2 .selected {
 
 .main-footer {
   position: relative;
-  margin: 20px 0px 20px 0px;
+  margin: 20px 0px 20px 20px;
   width: 100%;
 }
 
@@ -590,6 +584,15 @@ div.hover {
   .adela-logo {
     max-width: 25px;
   }
+
+  div.project--twoimg {
+    width: 100%;
+    max-width: 900px;
+    display: column;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px auto 10px auto;
+  }
 }
 
 @media screen and (max-width: 755px) {
@@ -621,18 +624,43 @@ div.hover {
     margin: 20px;
   }
 
-  .main-footer {
-    padding: 2rem 0;
-  }
-
   .adela-logo {
     max-width: 25px;
   }
+
+  div.project--twoimg {
+    width: 100%;
+    max-width: 900px;
+    display: column;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px auto 10px auto;
+  }
 }
 
-@media screen and (min-width: 300px) and (max-width: 340px) {
+@media screen (min-width: 980px) {
+  div.project-text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 200px;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 420px) {
   .footer-container {
     max-width: 280px;
+  }
+
+  div.project-text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -658,6 +686,14 @@ div.hover {
 
   header nav a {
     margin-bottom: 9px;
+  }
+
+  .project-description {
+    width: 100%;
+    max-width: 580px;
+    padding: 20px 0px 20px 0px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -686,6 +722,24 @@ div.hover {
     text-align: right;
     margin-bottom: 8px;
   }
+
+  .project-description {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px 0px 20px 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 420px) and (max-width: 520px) {
+  .project-description {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px 0px 20px 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media screen and (min-width: 300px) and (max-width: 600px) {
@@ -702,10 +756,6 @@ div.hover {
   .filters-container {
     max-width: 200px;
   }
-
-  .main-footer {
-    padding: 2rem 0;
-  }
 }
 
 @media screen and (min-width: 300px) and (max-width: 600px) {
@@ -720,7 +770,7 @@ div.hover {
   }
 }
 
-@media screen and (min-width: 340px) and (max-width: 414px) {
+@media screen and (min-width: 340px) and (max-width: 420px) {
   section.home-text {
     width: 320px;
     margin-left: auto;
@@ -734,10 +784,26 @@ div.hover {
   .footer-container {
     max-width: 320px;
   }
+
+  .project-description {
+    width: 100%;
+    max-width: 320px;
+    padding: 20px 0px 20px 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media screen and (min-width: 300px) and (max-width: 340px) {
   section.home-text {
     width: 280px;
+  }
+
+  .project-description {
+    width: 100%;
+    max-width: 280px;
+    padding: 20px 0px 20px 0px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
