@@ -530,6 +530,7 @@ div.image {
   z-index: -999;
   transition: all 500ms ease;
   opacity: 0.3;
+  margin-left: -50px;
 }
 
 div.hover {
