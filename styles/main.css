@@ -226,6 +226,7 @@ div.project-twoimg {
   display: flex;
   flex-direction: row;
   margin: 10px auto 10px auto;
+  justify-content: space-around;
 }
 
 img.project-twoimg {
